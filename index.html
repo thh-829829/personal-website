@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>童海红 | 个人介绍</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== 导航栏 ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">&lt;Tong /&gt;</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">首页</a></li>
+        <li><a href="#about" class="nav-link">关于我</a></li>
+        <li><a href="#experience" class="nav-link">实习经历</a></li>
+        <li><a href="#skills" class="nav-link">技术栈</a></li>
+        <li><a href="#projects" class="nav-link">项目经历</a></li>
+        <li><a href="#campus" class="nav-link">在校经历</a></li>
+        <li><a href="#contact" class="nav-link">联系方式</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="展开菜单">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== 首页 Hero ===== -->
+  <section class="hero section" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container fade-in">
+      <div class="hero-avatar">
+        <div class="avatar-placeholder">
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+      <h1 class="hero-title">你好，我是 <span class="highlight">童海红</span></h1>
+      <p class="hero-subtitle">软件工程师 · 数据科学与大数据技术 · 本科</p>
+      <p class="hero-desc">
+        热爱技术与数据，具备全栈开发与数据工程能力。从需求分析到系统部署，
+        从数据采集到算法优化，乐于用代码解决真实世界的问题。<br>
+        求职意向：杭州 · 软件工程师 · 5K-8K
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看项目</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关于我 ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title fade-in">关于我</h2>
+      <div class="about-grid">
+        <div class="about-card fade-in">
+          <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>教育背景</h3>
+          <ul>
+            <li><i class="fas fa-calendar-alt"></i> <strong>2022.09 – 2026.06</strong></li>
+            <li><i class="fas fa-university"></i> 宿州学院 · 数据科学与大数据技术 · 本科</li>
+            <li><i class="fas fa-flask"></i> 方向：大数据分析 / 推荐系统 / 后端开发</li>
+          </ul>
+        </div>
+        <div class="about-card fade-in">
+          <div class="about-card-icon"><i class="fas fa-star"></i></div>
+          <h3>个人优势</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> 独立完成全栈项目从需求分析到部署上线全流程</li>
+            <li><i class="fas fa-check-circle"></i> 掌握协同过滤算法原理与工程落地</li>
+            <li><i class="fas fa-check-circle"></i> 熟悉 Linux 运维与 Shell 脚本编写</li>
+            <li><i class="fas fa-check-circle"></i> 良好的文档编写与团队协作能力</li>
+            <li><i class="fas fa-check-circle"></i> 自主学习能力强，持续跟进前沿技术</li>
+            <li><i class="fas fa-check-circle"></i> 166 小时志愿服务，责任心强</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 实习经历 ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title fade-in">实习经历</h2>
+      <div class="experience-card fade-in">
+        <div class="exp-header">
+          <div class="exp-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="exp-meta">
+            <h3>苏州众方微科软件有限公司</h3>
+            <span class="exp-role">运维实习生</span>
+            <span class="exp-date"><i class="far fa-calendar-alt"></i> 2025.09 – 2025.12</span>
+          </div>
+        </div>
+        <p class="exp-summary">主要负责 GPS 定位后端服务运维、业务数据库排查、项目线上问题协同处理。</p>
+        <ul class="exp-details">
+          <li><i class="fas fa-check"></i> 运维 GPS 缓存服务，监控运行日志，校验缓存同步数据</li>
+          <li><i class="fas fa-check"></i> 查询业务数据表，调试 SQL，解决时间未更新、语句报错问题</li>
+          <li><i class="fas fa-check"></i> 管理 GPS 后台启动服务，保障线上稳定运行</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 技术栈 ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in">技术栈</h2>
+
+      <div class="skills-category fade-in">
+        <h3 class="skills-cat-title"><i class="fas fa-code"></i> 编程语言</h3>
+        <div class="skills-grid">
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fab fa-python skill-icon"></i>
+              <span class="skill-name">Python</span>
+              <span class="skill-level">90%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fab fa-java skill-icon"></i>
+              <span class="skill-name">Java</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-terminal skill-icon"></i>
+              <span class="skill-name">C 语言</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category fade-in">
+        <h3 class="skills-cat-title"><i class="fas fa-layer-group"></i> 框架与数据库</h3>
+        <div class="skills-grid">
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fab fa-python skill-icon"></i>
+              <span class="skill-name">Django</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-database skill-icon"></i>
+              <span class="skill-name">MySQL</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-database skill-icon"></i>
+              <span class="skill-name">Hadoop</span>
+              <span class="skill-level">65%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category fade-in">
+        <h3 class="skills-cat-title"><i class="fas fa-tools"></i> 工具与平台</h3>
+        <div class="skills-grid">
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fab fa-linux skill-icon"></i>
+              <span class="skill-name">Linux</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-terminal skill-icon"></i>
+              <span class="skill-name">Shell</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fab fa-git-alt skill-icon"></i>
+              <span class="skill-name">Git</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category fade-in">
+        <h3 class="skills-cat-title"><i class="fas fa-chart-line"></i> 数据分析与算法</h3>
+        <div class="skills-grid">
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-chart-bar skill-icon"></i>
+              <span class="skill-name">数据分析</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-spider skill-icon"></i>
+              <span class="skill-name">数据爬取</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-filter skill-icon"></i>
+              <span class="skill-name">协同过滤算法</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-project-diagram skill-icon"></i>
+              <span class="skill-name">Visio</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 项目经历 ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">项目经历</h2>
+      <div class="projects-grid fade-in">
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <span class="project-badge">毕业设计</span>
+          </div>
+          <h3>基于协同过滤算法的校园美食推荐系统</h3>
+          <span class="project-date"><i class="far fa-calendar-alt"></i> 2025.09 – 2026.05</span>
+          <p class="project-desc">
+            独立完成系统从需求分析、架构设计、数据库设计、核心模块开发到测试部署的全流程开发工作，
+            撰写毕业设计论文及相关技术文档。
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>协同过滤</span>
+            <span>腾讯地图 API</span>
+          </div>
+          <h4 class="project-subtitle">项目架构与流程</h4>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> <strong>需求分析：</strong>划分用户中心、美食管理、评分交互、个性化推荐、地图服务、后台管理 6 大核心模块</li>
+            <li><i class="fas fa-check"></i> <strong>数据库设计：</strong>用户表、美食信息表、评分记录表、收藏表、推荐记录表，MySQL 持久化存储与查询优化</li>
+            <li><i class="fas fa-check"></i> <strong>推荐引擎：</strong>用户-物品协同过滤，余弦相似度计算偏好，Top-N 推荐；冷启动采用热门美食兜底策略</li>
+            <li><i class="fas fa-check"></i> <strong>系统开发：</strong>Django MVT 架构，用户注册登录、美食浏览搜索、评分收藏、推荐展示、地图导航</li>
+            <li><i class="fas fa-check"></i> <strong>地图服务：</strong>集成腾讯地图 JavaScript API，坐标标注、周边搜索、路线规划及地图可视化</li>
+            <li><i class="fas fa-check"></i> <strong>性能优化：</strong>矩阵运算优化与相似度预计算提升推荐响应速度</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 在校经历 ===== -->
+  <section class="campus section" id="campus">
+    <div class="container">
+      <h2 class="section-title fade-in">在校经历</h2>
+      <div class="campus-grid">
+        <div class="campus-card fade-in">
+          <div class="campus-card-header">
+            <div class="campus-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <span class="campus-date">2023.09 – 2024.06</span>
+          </div>
+          <h3>宿州学院社会责任与教育中心</h3>
+          <span class="campus-role">部长</span>
+          <ul>
+            <li><i class="fas fa-check"></i> 制定并执行年度工作计划，统筹协调跨部门协作，策划并组织 10+ 场大型公益活动，累计覆盖 40+ 参与者</li>
+            <li><i class="fas fa-check"></i> 主导志愿者培训体系搭建，通过专业培训提升团队 20% 服务效能</li>
+            <li><i class="fas fa-check"></i> 累计参与志愿服务 166 小时</li>
+          </ul>
+        </div>
+        <div class="campus-card fade-in">
+          <div class="campus-card-header">
+            <div class="campus-icon"><i class="fas fa-trophy"></i></div>
+            <span class="campus-date">2022.03 – 2023.03</span>
+          </div>
+          <h3>宿州学院挑战杯竞赛</h3>
+          <span class="campus-role">队员 · 三等奖</span>
+          <ul>
+            <li><i class="fas fa-check"></i> 参与"用于超灵敏检测人体血清中甲胎蛋白的便携式智能手机微流控电化学免疫传感器"项目研发</li>
+            <li><i class="fas fa-check"></i> 负责数据分析与技术文档编写</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 联系方式 ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">联系方式</h2>
+      <div class="contact-info-row fade-in">
+        <div class="contact-personal">
+          <p><i class="fas fa-user"></i> 童海红 · 男 · 24 岁</p>
+          <p><i class="fas fa-map-marker-alt"></i> 意向城市：杭州</p>
+          <p><i class="fas fa-dollar-sign"></i> 期望薪资：5K-8K</p>
+        </div>
+      </div>
+      <div class="contact-grid contact-grid-4 fade-in">
+        <a href="mailto:2543672247@qq.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>邮箱</h3>
+          <p>2543672247@qq.com</p>
+        </a>
+        <a href="tel:18697584849" class="contact-card">
+          <i class="fas fa-phone-alt"></i>
+          <h3>电话</h3>
+          <p>18697584849</p>
+        </a>
+        <a href="https://github.com" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>github.com/tonghh</p>
+        </a>
+        <a href="https://gitee.com" target="_blank" class="contact-card">
+          <i class="fab fa-gitlab"></i>
+          <h3>Gitee</h3>
+          <p>gitee.com/tonghh</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 童海红. Built with <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
