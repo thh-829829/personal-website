@@ -972,3 +972,69 @@ body {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+/* ===== About second row ===== */
+.about-grid-second {
+  max-width: 480px;
+  margin: 32px auto 0;
+}
+
+.about-intro-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+/* ===== Project links ===== */
+.project-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: var(--badge-bg);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.project-link:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.project-link i {
+  font-size: 0.9rem;
+}
+
+/* ===== Contact 5-column grid ===== */
+.contact-grid-5 {
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+
+/* ===== Responsive additions ===== */
+@media (max-width: 768px) {
+  .about-grid-second {
+    max-width: 100%;
+  }
+  .contact-grid-5 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-grid-5 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
