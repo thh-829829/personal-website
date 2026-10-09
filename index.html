@@ -213,6 +213,14 @@
             </div>
             <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
           </div>
+          <div class="skill-item fade-in">
+            <div class="skill-info">
+              <i class="fas fa-database skill-icon"></i>
+              <span class="skill-name">SQLite</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          </div>
         </div>
       </div>
 
@@ -309,7 +317,7 @@
             <span class="project-badge">AI 项目</span>
           </div>
           <h3>知学 Agent —— 多角色智能知识库与任务管理系统</h3>
-          <span class="project-date"><i class="far fa-calendar-alt"></i> 2026.07 – 2026.09</span>
+          <span class="project-date"><i class="far fa-calendar-alt"></i> 2026.08 – 2026.10</span>
           <p class="project-desc">
             面向多角色场景的 AI 学习助手，融合 RAG 文档知识库与 Agent 任务管理能力，
             支持文档智能问答、目标拆解、任务追踪、权限管控与行为审计。
@@ -340,7 +348,37 @@
           </div>
         </div>
 
-        <!-- 项目二：校园美食推荐系统 -->
+        <!-- 项目二：CodeLearner 编程学习助手 -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="project-badge">AI 项目</span>
+          </div>
+          <h3>CodeLearner 编程学习助手</h3>
+          <span class="project-date"><i class="far fa-calendar-alt"></i> 2026.06 – 2026.07</span>
+          <p class="project-desc">
+            面向编程初学者的本地 AI 学习工作台，打通代码解释、知识沉淀与回顾复习闭环。
+          </p>
+          <div class="project-tech">
+            <span>FastAPI</span>
+            <span>SQLite</span>
+            <span>Jinja2</span>
+            <span>原生 JavaScript</span>
+            <span>DeepSeek API</span>
+          </div>
+          <h4 class="project-subtitle">主要工作</h4>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> <strong>后端接口：</strong>基于 FastAPI + Jinja2 搭建后端，封装代码解释、英语词汇解析、知识卡片管理三类核心接口；统一封装大模型调用，处理鉴权失败、超时、模型不支持图片等异常并转中文提示</li>
+            <li><i class="fas fa-check"></i> <strong>Prompt 设计：</strong>设计 9 段结构化 Prompt（整体作用、逐行解释、语法要点、英语词汇对照表、常见错误、前置知识缺口与学习路径），强制模型按固定 Markdown 结构输出</li>
+            <li><i class="fas fa-check"></i> <strong>数据存储：</strong>设计 3 张 SQLite 表（代码笔记 / 英语笔记 / 学习记录），实现分类筛选、分页浏览与学习过程回溯；学习记录自动保留最近 500 条</li>
+            <li><i class="fas fa-check"></i> <strong>知识卡片：</strong>引入 AI 生成知识卡片 JSON 草稿机制（title / category / difficulty / keywords 等字段），"我的理解"字段强制留空由用户填写，保证知识沉淀是自己内化而非 AI 代笔</li>
+            <li><i class="fas fa-check"></i> <strong>前端交互：</strong>原生 JS 实现 AI 结果模块化折叠、Dashboard 卡片布局、详情页学习过程回溯；封装 .bat 一键启动脚本自动拉起服务并打开浏览器</li>
+          </ul>
+        </div>
+
+        <!-- 项目三：校园美食推荐系统 -->
         <div class="project-card fade-in">
           <div class="project-card-header">
             <div class="project-icon">
@@ -376,8 +414,8 @@
       <div class="showcase fade-in">
         <h3 class="showcase-title"><i class="fas fa-link"></i> 项目展示</h3>
         <div class="project-links showcase-links">
-          <a href="https://thh-829829.github.io/personal-website/" target="_blank" class="project-link"><i class="fas fa-globe"></i> 个人网站</a>
-          <a href="https://my-nav.onrender.com/" target="_blank" class="project-link"><i class="fas fa-window-restore"></i> AI Web 应用</a>
+          <a href="https://thh-829829.github.io/personal-website/" target="_blank" class="project-link"><i class="fas fa-globe"></i> 个人简历网站版</a>
+          <a href="https://my-nav.onrender.com/" target="_blank" class="project-link"><i class="fas fa-window-restore"></i> AI Web 应用（网页收藏整理）</a>
           <a href="http://121.199.53.168:8000/static/index.html" target="_blank" class="project-link"><i class="fas fa-robot"></i> 知学 Agent 演示</a>
           <a href="http://121.199.53.168:8000/docs" target="_blank" class="project-link"><i class="fas fa-book"></i> 接口文档</a>
         </div>
